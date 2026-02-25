@@ -1,0 +1,55 @@
+Desafios
+
+-Altere o conteúdo da tag h1 com document.querySelector e atribua o seguinte texto: Hora do Desafio.
+
+R:
+let titulo = document.querySelector('h1');
+titulo.innerHTML = 'Hora do Desafio';
+
+-Crie uma função que exiba no console a mensagem O botão foi clicado sempre que o botão Console for pressionado.
+
+R:
+js->
+function botaoConsole(){
+    console.log('o botão foi clicado ${contador}');
+};
+
+html->
+<button onclick="botaoConsole()" class="button">Console</button>
+
+-Crie uma função que exiba um alerta com a mensagem: Eu amo JS, sempre que o botão Alerta for pressionado.
+
+R:
+js->
+function botaoAlerta(){
+    alert('Eu amo JS');
+};
+
+html->
+<button onclick="botaoAlerta()" class="button">Alert</button>
+
+-Crie uma função que é executada quando o botão prompt é clicado, perguntando o nome de uma cidade do Brasil. Em seguida, exiba um alerta com a mensagem concatenando a resposta com o texto: Estive em {cidade} e lembrei de você.
+
+R:
+js->
+function botaoPrompt(){
+    let cidade = prompt('Digite uma cidade do brasil');
+    alert(`Estive em ${cidade} e lembrei de você.`)
+};
+
+html->
+<button onclick="botaoPrompt()" class="button">Prompt</button>
+
+-Ao clicar no botão soma, peça 2 números inteiros e exiba o resultado da soma em um alerta.
+
+R:
+js->
+function botaoSoma(){ 
+    let parcela1 = prompt('Digite a parcela de umnumero para somar.');
+    let parcela2 = prompt('Digite a parcela de outro numero para somar com o anterior.');
+    let soma = parseInt(parcela1) + parseInt(parcela2);
+    alert(`A soma de ${parcela1} + ${parcela2} é: ${soma}`);
+};
+
+html->
+<button onclick="botaoSoma()" class="button">Soma</button>
