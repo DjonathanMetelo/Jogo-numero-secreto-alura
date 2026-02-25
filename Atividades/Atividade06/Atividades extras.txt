@@ -1,0 +1,68 @@
+Desafios
+
+    Criar uma função que exibe "Olá, mundo!" no console.
+
+    R:
+    function olaMundo (){
+        console.log('Olá, mundo!');
+    };
+    
+    olaMundo();
+
+    R:
+    let nome = prompt('escreva um nome');
+    nomeConsole(nome);
+
+    function nomeConsole (nomeFun){
+        return console.log(`Olá, ${nomeFun}!`);
+    };
+
+    Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+
+    R:
+    numeroRecebido = 16;
+    dobroNumero(numeroRecebido);
+
+    function dobroNumero(numero){
+        numero = numero*2;
+        return console.log(numero);
+    };
+
+
+    Criar uma função que recebe três números como parâmetros e retorna a média deles.
+
+    R:
+    numeroRecebido1 = 5;
+    numeroRecebido2 = 9;
+    numeroRecebido3 = 7;
+    triploNumero(numeroRecebido1, numeroRecebido2, numeroRecebido3);
+
+    function triploNumero(dividendo1, dividendo2, dividendo3){
+        let numero = 0;
+        numero = (dividendo1 + dividendo2 + dividendo3)/3;
+        return console.log(numero);
+    };
+
+    Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+
+    R:
+    numeroRecebido1 = 15;
+    numeroRecebido2 = 9;;
+    maiorNumero(numeroRecebido1, numeroRecebido2);
+
+    function maiorNumero(numero1, numero2){
+        if (numero1 > numero2)
+            return console.log(numero1);
+        else
+            return console.log(numero2);
+    };
+
+    Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+
+    R:
+    let numeroRecebido = exponencialNumero(9);
+    console.log(numeroRecebido);
+
+    function exponencialNumero(numero){
+        return numero*numero; 
+    }
